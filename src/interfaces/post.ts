@@ -5,6 +5,7 @@ export interface IPostData {
   hideInList: boolean
   tags?: [],
   feature: string,
+  autor: string
 }
 
 export interface IPost {

@@ -1,14 +1,11 @@
 <template>
   <div class="">
     <a-tabs defaultActiveKey="1">
-      <a-tab-pane :tab="$t('basicSetting')" key="1">
-        <basic-setting></basic-setting>
+      <a-tab-pane :tab="$t('interfaceSetting')" key="1">
+        <interface-setting></interface-setting>
       </a-tab-pane>
-      <a-tab-pane :tab="$t('commentSetting')" key="2">
-        <comment-setting></comment-setting>
-      </a-tab-pane>
-      <a-tab-pane :tab="$t('faviconSetting')" key="3">
-        <favicon-setting></favicon-setting>
+      <a-tab-pane :tab="$t('pictureUpload')" key="2">
+        <picture-upload></picture-upload>
       </a-tab-pane>
       <a-tab-pane :tab="$t('avatarSetting')" key="4">
         <avatar-setting></avatar-setting>
@@ -21,16 +18,14 @@
 import { ipcRenderer, Event } from 'electron'
 import { Vue, Component } from 'vue-property-decorator'
 import { State } from 'vuex-class'
-import BasicSetting from './includes/BasicSetting.vue'
-import CommentSetting from './includes/CommentSetting.vue'
-import FaviconSetting from './includes/FaviconSetting.vue'
+import InterfaceSetting from './includes/InterfaceSetting.vue'
+import PictureUpload from './includes/PictureUpload.vue'
 import AvatarSetting from './includes/AvatarSetting.vue'
 
 @Component({
   components: {
-    BasicSetting,
-    CommentSetting,
-    FaviconSetting,
+    InterfaceSetting,
+    PictureUpload,
     AvatarSetting,
   },
 })

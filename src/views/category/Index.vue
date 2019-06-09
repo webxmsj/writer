@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <a-row type="flex" justify="end" class="tool-container">
-      <a-button class="btn" type="primary" @click="newMenu">{{ $t('newMenu') }}</a-button>
+      <a-button class="btn" type="primary" @click="newCategory">{{ $t('newCategory') }}</a-button>
     </a-row>
     <div class="content-container">
       <a-table
@@ -85,7 +85,7 @@ interface IForm {
 }
 
 @Component
-export default class Menu extends Vue {
+export default class Category extends Vue {
   @State('site') site!: any
 
   form: IForm = {
@@ -151,7 +151,7 @@ export default class Menu extends Vue {
     return this.form.name && this.form.link
   }
 
-  newMenu() {
+  newCategory() {
     this.form.name = null
     this.form.index = null
     this.form.openType = MenuTypes.Internal

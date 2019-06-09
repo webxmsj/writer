@@ -14,13 +14,17 @@
             <a-icon type="file-text" />
             <span class="nav-text">{{ $t('article') }}</span>
           </a-menu-item>
-          <a-menu-item key="menu">
+          <a-menu-item key="category">
             <a-icon type="bars" />
-            <span class="nav-text">{{ $t('menu') }}</span>
+            <span class="nav-text">{{ $t('category') }}</span>
           </a-menu-item>
           <a-menu-item key="tags">
             <a-icon type="tags" />
             <span class="nav-text">{{ $t('tag') }}</span>
+          </a-menu-item>
+          <a-menu-item key="role">
+            <a-icon type="setting" />
+            <span class="nav-text">{{ $t('role') }}</span>
           </a-menu-item>
           <a-menu-item key="setting">
             <a-icon type="setting" />

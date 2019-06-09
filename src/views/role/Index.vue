@@ -1,6 +1,6 @@
 <template>
   <div>
-    其他设置
+    角色管理
   </div>
 </template>
 
@@ -8,10 +8,7 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component
-export default class AvatarSetting extends Vue {
+export default class Role extends Vue {
+
 }
 </script>
-
-
-<style lang="less" scoped>
-</style>

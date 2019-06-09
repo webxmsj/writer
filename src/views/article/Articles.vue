@@ -101,7 +101,20 @@ export default class Articles extends Vue {
   }
 
   get postList() {
-    return this.site.posts.filter((item: IPost) => item.data.title.toLowerCase().includes(this.keyword.toLowerCase()))
+    return [{
+      content: 'asdf',
+      fileName: 'mxf',
+      data: {
+        title: 'asdfasdf',
+        date: '2019/06/10',
+        published: true,
+        hideInList: false,
+        tags: ['1', '2'],
+        feature: 'asdf',
+        autor: 'mxf',
+      },
+    }]
+    // return this.site.posts.filter((item: IPost) => item.data.title.toLowerCase().includes(this.keyword.toLowerCase()))
   }
 
   get rowSelection() {
