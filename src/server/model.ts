@@ -18,7 +18,7 @@ export default class Model {
     this.appDir = appInstance.appDir
     this.db = appInstance.db
 
-    this.initDataStore()
+    // this.initDataStore()
   }
 
   private initDataStore(): void {
